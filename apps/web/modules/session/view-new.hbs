@@ -1,0 +1,20 @@
+<div class="focus-form" style="background-color: #fff;">
+    <div class="panel panel-blue">
+        <div class="panel-body pan">
+            <img style="margin-left: 27%;" src="img/logo.png">
+            {{> flash}}
+            <form class="form-horizontal" method="post" action="/login">
+                <div class="form-body pal">
+                    <div class="form-group">
+                      <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<p class="text-center">You don't have an account yet? <a href="/signup">Sign-Up here</a></p>

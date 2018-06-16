@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Built with Kangaroojs!</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body style="background-color: #74b7e1;">
+
+    
+    <div class="container" style="background-color:#ffffff; ">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 col-xl-6">
+                <div id="logo"><a href="https://v3.verifymylenses.com/"> <img alt="verifymylenses" src="/img/logo.png"> </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 col-xl-6">
+                <div style="float: right;" class="welcome_panel"> <h2>Verification - Admin Panel</h2>
+                    <p> Welcome
+                        <span>Scott</span>
+                        | Thursday, June 14th, 2018 | <a href="/signout"><span>Logout</span></a> 
+                    </p>
+                </div>
+            </div>
+        </div> 
+        {{> menu}}
+      <div class="row">
+        <div class="col-sm-12">
+          {{{body}}}
+        </div>
+      </div>
+    </div>
+    {{> footer }}
+    <script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
